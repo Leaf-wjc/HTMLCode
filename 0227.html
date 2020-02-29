@@ -15,36 +15,33 @@
 		           align="center" 表示整个table的居中，不是单元格中内容的居中
 		           frame属性可以设置table的外边框属性
 		           rules内边框属性
+		           4.表格嵌套一定要放在td单元格中，并且是完整的表格
 	-->
-	<table border="5" width="600px;" bgcolor="pink" cellspacing="5" cellpadding="10" align="center"
-	 frame="vsides" rules="rows">
+	<table border="1" width="600px;" cellspacing="0"	 align="center">
 		<caption>前端工程师平均工资</caption>
 		<thead>
-			<tr>
-				<th>城市</th>
-				<th>2014年</th>
-				<th>2014年</th>
-				<th>2015年</th>
-				<th>2016年</th>
+			<tr bgcolor="pink">
+				<th rowspan="2">城市</th>
+				<th colspan="2">2014年</th>
+				<th rowspan="2">2015年</th>
+				<th rowspan="2">2016年</th>
 			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th>城市</th>
+			<tr bgcolor="pink">
 				<th>上半年</th>
 				<th>下半年</th>
-				<th>2015年</th>
-				<th>2016年</th>
 			</tr>
+		</thead>
+		<tbody align="center" valign="middle">
+
 			<tr>
-				<td>北京</td>
+				<td bgcolor="orange">北京</td>
 				<td>8000</td>
 				<td>9000</td>
 				<td>10000</td>
 				<td>12000</td>
 			</tr>
 			<tr>
-				<td>上海</td>
+				<td bgcolor="orange">上海</td>
 				<td>6000</td>
 				<td>7000</td>
 				<td>8000</td>
@@ -52,8 +49,8 @@
 			</tr>
 		</tbody>
 		<tfoot>
-			<tr>
-				<td>合计</td>
+			<tr align="center" valign="middle">
+				<td height="40px;" bgcolor="orange">合计</td>
 				<td>7000</td>
 				<td>8000</td>
 				<td>9000</td>
@@ -64,6 +61,32 @@
 
 
 	</table>
-	
+	<table border="1" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>2014</td>
+			<td>2015</td>
+			<td>2016</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="1" cellspacing="0" width="100%" frame="vsides">
+					<tr>
+						<td>上半年</td>
+						<td>下半年</td>
+					</tr>
+					<tr>
+						<td>7000</td>
+						<td>8000</td>
+					</tr>
+				</table>
+			</td>
+			<td>10000</td>
+			<td>12000</td>
+		</tr>
+	</table>
+
+
+
+
 </body>
 </html>
