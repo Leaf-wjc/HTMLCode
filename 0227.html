@@ -10,8 +10,14 @@
 		表格划分三部分:表头、主体、脚注
 		thead、tbody、tfoot
 		2.th标签作为表头标签来使用，自带的属性有加粗文字和文字居中
+		3.table属性 cellpadding 控制内容与单元格的边距
+		           cellspacing 控制单元格之间的边距
+		           align="center" 表示整个table的居中，不是单元格中内容的居中
+		           frame属性可以设置table的外边框属性
+		           rules内边框属性
 	-->
-	<table border="1" width="600px;">
+	<table border="5" width="600px;" bgcolor="pink" cellspacing="5" cellpadding="10" align="center"
+	 frame="vsides" rules="rows">
 		<caption>前端工程师平均工资</caption>
 		<thead>
 			<tr>
