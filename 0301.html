@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- HTML标签嵌套 
+		标签不能随便嵌套
+		1.ul>li ol>li dl>dt+dd
+		块级标签、行内标签
+	-->
+	<!-- 标签嵌套规则 
+		1.块级标签可包含行内元素和某些块级元素
+		2.编写代码时，尽量块级元素跟块级元素并列，行内元素跟行内元素并列
+		3.特殊的块级元素只能包含行内元素，不能再包含块级元素
+		h1-h6 p dt
+		4.
+	-->
+	<div>
+		<h2>我是标题2号字</h2>
+		<div>
+			我是块级 标签div，我里面包含了P标签
+			<p>
+				我是P标签，我里面包含了span标签
+				<span>
+					我是span标签，我里面包含了a标签
+					<a href="">
+						我是a标签
+					</a>
+				</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
